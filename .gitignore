@@ -1,3 +1,8 @@
+.idea
+.vscode
+.DS_Store
+
+dump.db
 # Binaries for programs and plugins
 *.exe
 *.exe~
