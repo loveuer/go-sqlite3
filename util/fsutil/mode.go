@@ -4,8 +4,8 @@ package fsutil
 import (
 	"io/fs"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 )
 
 // ParseFileMode parses a file mode as returned by

@@ -1,4 +1,4 @@
-module github.com/ncruces/go-sqlite3
+module github.com/loveuer/go-sqlite3
 
 go 1.21
 
@@ -7,6 +7,8 @@ toolchain go1.23.0
 require (
 	github.com/dchest/siphash v1.2.3
 	github.com/google/uuid v1.6.0
+	github.com/ncruces/go-sqlite3 v0.18.3
+	github.com/ncruces/go-sqlite3/gormlite v0.18.0
 	github.com/ncruces/julianday v1.0.0
 	github.com/ncruces/sort v0.1.2
 	github.com/psanford/httpreadat v0.1.0
@@ -15,7 +17,17 @@ require (
 	golang.org/x/sync v0.8.0
 	golang.org/x/sys v0.25.0
 	golang.org/x/text v0.18.0
+	gorm.io/gorm v1.25.12
 	lukechampine.com/adiantum v1.1.1
 )
 
+require (
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
+)
+
 retract v0.4.0 // tagged from the wrong branch
+
+replace (
+	github.com/ncruces/go-sqlite v0.18.3 => github.com/loveuer/go-sqlite v1.0.0
+)

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
+	_ "github.com/loveuer/go-sqlite3/internal/testcfg"
 	"github.com/ncruces/go-sqlite3"
 	_ "github.com/ncruces/go-sqlite3/embed"
-	_ "github.com/ncruces/go-sqlite3/internal/testcfg"
 )
 
 func TestCreateFunction(t *testing.T) {

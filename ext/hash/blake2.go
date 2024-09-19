@@ -3,8 +3,8 @@ package hash
 import (
 	"crypto"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 )
 
 func blake2sFunc(ctx sqlite3.Context, arg ...sqlite3.Value) {

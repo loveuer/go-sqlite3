@@ -23,8 +23,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/collate"
 	"golang.org/x/text/language"

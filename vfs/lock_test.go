@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/tetratelabs/wazero/experimental/wazerotest"
 )
 

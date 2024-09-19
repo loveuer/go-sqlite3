@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3/util/osutil"
 	"github.com/ncruces/go-sqlite3/util/vtabutil"
 )

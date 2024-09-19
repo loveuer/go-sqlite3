@@ -8,7 +8,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 // Quote escapes and quotes a value

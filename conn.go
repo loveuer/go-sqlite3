@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3/vfs"
 	"github.com/tetratelabs/wazero/api"
 )

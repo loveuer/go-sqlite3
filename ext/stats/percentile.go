@@ -6,8 +6,8 @@ import (
 	"math"
 	"slices"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 	"github.com/ncruces/sort/quick"
 )
 

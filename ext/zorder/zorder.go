@@ -6,8 +6,8 @@ package zorder
 import (
 	"errors"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 )
 
 // Register registers the zorder and unzorder SQL functions.

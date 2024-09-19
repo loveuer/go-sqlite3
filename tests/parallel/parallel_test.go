@@ -13,9 +13,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
+	_ "github.com/loveuer/go-sqlite3/internal/testcfg"
 	"github.com/ncruces/go-sqlite3"
 	_ "github.com/ncruces/go-sqlite3/embed"
-	_ "github.com/ncruces/go-sqlite3/internal/testcfg"
 	"github.com/ncruces/go-sqlite3/vfs"
 	_ "github.com/ncruces/go-sqlite3/vfs/adiantum"
 	"github.com/ncruces/go-sqlite3/vfs/memdb"

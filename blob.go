@@ -3,7 +3,7 @@ package sqlite3
 import (
 	"io"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 // ZeroBlob represents a zero-filled, length n BLOB

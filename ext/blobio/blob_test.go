@@ -8,12 +8,12 @@ import (
 	"strings"
 	"testing"
 
+	_ "github.com/loveuer/go-sqlite3/internal/testcfg"
 	"github.com/ncruces/go-sqlite3"
 	"github.com/ncruces/go-sqlite3/driver"
 	_ "github.com/ncruces/go-sqlite3/embed"
 	"github.com/ncruces/go-sqlite3/ext/array"
 	"github.com/ncruces/go-sqlite3/ext/blobio"
-	_ "github.com/ncruces/go-sqlite3/internal/testcfg"
 	_ "github.com/ncruces/go-sqlite3/vfs/memdb"
 )
 

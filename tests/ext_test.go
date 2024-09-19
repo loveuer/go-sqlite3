@@ -3,9 +3,9 @@ package tests
 import (
 	"testing"
 
+	_ "github.com/loveuer/go-sqlite3/internal/testcfg"
 	"github.com/ncruces/go-sqlite3"
 	_ "github.com/ncruces/go-sqlite3/embed"
-	_ "github.com/ncruces/go-sqlite3/internal/testcfg"
 )
 
 func Test_base64(t *testing.T) {

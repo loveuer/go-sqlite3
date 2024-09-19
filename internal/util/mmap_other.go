@@ -5,7 +5,7 @@ package util
 import (
 	"context"
 
-	"github.com/ncruces/go-sqlite3/internal/alloc"
+	"github.com/loveuer/go-sqlite3/internal/alloc"
 	"github.com/tetratelabs/wazero/experimental"
 )
 

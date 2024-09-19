@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 func TestUnwrapPointer(t *testing.T) {

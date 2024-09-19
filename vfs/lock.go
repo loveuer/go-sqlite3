@@ -2,7 +2,7 @@
 
 package vfs
 
-import "github.com/ncruces/go-sqlite3/internal/util"
+import "github.com/loveuer/go-sqlite3/internal/util"
 
 // SupportsFileLocking is false on platforms that do not support file locking.
 // To open a database file on those platforms,

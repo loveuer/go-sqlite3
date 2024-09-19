@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 // Value is any value that can be stored in a database table.

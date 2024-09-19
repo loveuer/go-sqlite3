@@ -1,6 +1,6 @@
 package sqlite3
 
-import "github.com/ncruces/go-sqlite3/internal/util"
+import "github.com/loveuer/go-sqlite3/internal/util"
 
 // JSON returns a value that can be used as an argument to
 // [database/sql.DB.Exec], [database/sql.Row.Scan] and similar methods to

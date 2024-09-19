@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/tetratelabs/wazero/api"
 	"golang.org/x/sys/unix"
 )

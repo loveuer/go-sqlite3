@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 func Test_assertErr(t *testing.T) {

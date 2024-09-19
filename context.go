@@ -6,7 +6,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 // Context is the context in which an SQL function executes.

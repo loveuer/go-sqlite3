@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
+	"github.com/loveuer/go-sqlite3/internal/util"
 	"github.com/ncruces/go-sqlite3"
-	"github.com/ncruces/go-sqlite3/internal/util"
 )
 
 // Register registers the SQL functions:

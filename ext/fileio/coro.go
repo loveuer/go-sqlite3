@@ -5,7 +5,7 @@ package fileio
 import (
 	"fmt"
 
-	"github.com/ncruces/go-sqlite3/internal/util"
+	"github.com/loveuer/go-sqlite3/internal/util"
 )
 
 // Adapted from: https://research.swtch.com/coro
