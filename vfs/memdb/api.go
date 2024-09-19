@@ -32,7 +32,7 @@ var (
 // using data as its initial contents.
 // The new database takes ownership of data,
 // and the caller should not use data after this call.
-func Create(name string, data []byte) *memDB {
+func Create(name string, data []byte) *MemDB {
 	memoryMtx.Lock()
 	defer memoryMtx.Unlock()
 
@@ -63,7 +63,7 @@ func Create(name string, data []byte) *memDB {
 
 	memoryDBs[name] = db
 
-	return db
+	return &MemDB{db: db}
 }
 
 // Delete deletes a shared memory database.

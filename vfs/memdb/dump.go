@@ -9,15 +9,19 @@ import (
 // Note: This struct does not provide concurrency safety,
 // and you must manage concurrent access yourself.
 type MemDB struct {
+	db *memDB
+}
+
+type MemDBDumper struct {
 	bs     []byte
 	offset int
 }
 
-func (m *MemDB) Close() error {
+func (m *MemDBDumper) Close() error {
 	return nil
 }
 
-func (m *MemDB) Seek(offset int64, whence int) (int64, error) {
+func (m *MemDBDumper) Seek(offset int64, whence int) (int64, error) {
 	var newOffset int
 
 	switch whence {
@@ -39,7 +43,7 @@ func (m *MemDB) Seek(offset int64, whence int) (int64, error) {
 	return int64(m.offset), nil
 }
 
-func (m *MemDB) Read(p []byte) (n int, err error) {
+func (m *MemDBDumper) Read(p []byte) (n int, err error) {
 	if m.offset >= len(m.bs) {
 		return 0, io.EOF // No more data to read
 	}
@@ -50,15 +54,15 @@ func (m *MemDB) Read(p []byte) (n int, err error) {
 	return n, nil // Return number of bytes read and no error
 }
 
-func (m *memDB) Dump() io.ReadSeekCloser {
+func (m *MemDB) Dump() io.ReadSeekCloser {
 
-	m.lockMtx.Lock()
-	defer m.lockMtx.Unlock()
+	m.db.lockMtx.Lock()
+	defer m.db.lockMtx.Unlock()
 
-	size := m.size
-	d := &MemDB{bs: make([]byte, 0, size)}
+	size := m.db.size
+	d := &MemDBDumper{bs: make([]byte, 0, size)}
 
-	for _, bs := range m.data {
+	for _, bs := range m.db.data {
 		d.bs = append(d.bs, bs[:]...)
 	}
 
